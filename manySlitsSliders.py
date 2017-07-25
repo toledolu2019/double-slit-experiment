@@ -49,10 +49,13 @@ def update_data(attrname, old, new):
     x = np.linspace(-1, 1, 3000)
         
     num = (s - 1)*d
+    print(num)
     startingPoint = -1 * (num/2)
+    print(startingPoint)
     slitArray = np.arange(s)
-    sA = slitArray * d - startingPoint
-    
+    print(slitArray)
+    sA = slitArray * d + startingPoint
+    print(sA)
     
 
     rsquared = L**2 + ( x[:,None] - sA[None,:] )**2
